@@ -25,9 +25,7 @@ export default function Home() {
           <li>Save and see your changes instantly.</li>
         </ol>
 
-        <Button size="icon" variant="outline">
-          <UserPlus className="w-5 h-5" />
-        </Button>
+        <Button>Hello</Button>
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
         <a
