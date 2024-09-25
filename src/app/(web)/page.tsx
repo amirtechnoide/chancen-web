@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { UserPlus } from "lucide-react";
 import Image from "next/image";
 
 export default function Home() {
@@ -25,7 +24,11 @@ export default function Home() {
           <li>Save and see your changes instantly.</li>
         </ol>
 
-        <Button>Hello</Button>
+        <Button>
+          <a target="_blank" rel="noopener noreferrer" href="/auth/signin">
+            Hello
+          </a>
+        </Button>
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
         <a
