@@ -15,7 +15,7 @@ export const headerLinks = [
         
     },
     {
-        name:"Support",
+        name:"Repayment",
         route:"/",
         
     }

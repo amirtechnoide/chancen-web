@@ -5,7 +5,7 @@ import Image from 'next/image'
 import React from 'react'
 const Nav = () => {
   return (
-    <section className='flex items-center justify-between'>
+    <section className='flex items-center justify-between z-40'>
         <div>
             <Image alt='' src={chancenlogo} width={200} height={200}/>
         </div>
@@ -13,7 +13,7 @@ const Nav = () => {
             {
                 headerLinks.map((linkObj) => {
                     return (
-                        <li key={linkObj.name} className='hover:bg-primary hover:text-white'>
+                        <li key={linkObj.name} className='hover:text-primary text-white hover:text-white'>
                             <a href={linkObj.route}>{linkObj.name}</a>
                         </li>
                     )

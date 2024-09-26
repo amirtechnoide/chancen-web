@@ -1,5 +1,5 @@
 import React from "react";
-
+//big round black svg at header
 const HeadSvg = ({className}:{className:string}) => {
   return (
     <div className={`${className}`}>
