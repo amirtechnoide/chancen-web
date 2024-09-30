@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { Montserrat } from "next/font/google";
+import chancenlogo from "@/assets/images/Chencen.png";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -32,6 +33,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href={chancenlogo.src} />
+      </head>
       <body className={montserrat.className}>{children}</body>
     </html>
   );
