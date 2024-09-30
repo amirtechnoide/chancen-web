@@ -39,6 +39,32 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 This project uses [Tailwind CSS](https://tailwindcss.com/), [TypeScript](https://www.typescriptlang.org/), and [ESLint](https://eslint.org/) for a better development experience.
 
 ## Learn More
+```
+└── 📁src
+    └── 📁app
+        └── 📁(web)
+            └── 📁faq
+            └── page.tsx
+        └── 📁auth
+        └── 📁dashboard
+            └── 📁component
+            └── layout.tsx
+        └── 📁fonts
+            └── GeistMonoVF.woff
+            └── GeistVF.woff
+        └── favicon.ico
+        └── globals.css
+        └── layout.tsx
+    └── 📁assets
+        └── 📁dashboard
+        ├── web
+    └── 📁components
+        └── 📁ui
+            └── button.tsx
+    └── 📁config
+    └── 📁lib
+        └── utils.ts
+```
 
 To learn more about Next.js, take a look at the following resources:
 
