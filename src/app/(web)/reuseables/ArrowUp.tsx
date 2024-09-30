@@ -2,7 +2,7 @@ import React from "react";
 
 const ArrowUp = () => {
   return (
-    <div>
+    <>
       <svg
         width="18"
         height="19"
@@ -17,7 +17,7 @@ const ArrowUp = () => {
           fill="white"
         />
       </svg>
-    </div>
+    </>
   );
 };
 
