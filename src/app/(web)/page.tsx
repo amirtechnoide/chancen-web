@@ -116,9 +116,7 @@ export default function Home() {
       </section>
       <section className="section-two mt-[7rem]">
               <h1 className="text-4xl  font-semibold text-center underline underline-offset-[1rem] ">University Partner</h1>
-              <div className="bg-[url('../../assets/images/siuBuilding.png')]">
-
-              </div>
+              
 
       </section>
     </div>
