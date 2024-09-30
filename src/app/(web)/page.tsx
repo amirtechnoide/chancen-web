@@ -1,7 +1,7 @@
 import { Check, LocateIcon, MapPin, UserPlus } from "lucide-react";
 import Nav from "./reuseables/Nav";
 import Image from "next/image";
-import { headerGraduation, secTwoImg1, svgOne } from "@/lib/web/images";
+import { headerGraduation, secTwoImg1 } from "@/lib/web/images";
 import HeadSvg from "./reuseables/headSvg";
 import GraySvg from "./reuseables/graySvg";
 import TaggedInfo from "./reuseables/TaggedInfo";
@@ -56,10 +56,10 @@ export default function Home() {
       <section className="section-one z-50 relative bg-zinc">
         <div className="flex justify-between">
           <div className="image-holder w-1/2 relative">
-          <div className="backdrop-blur absolute size-[10rem] top-[50%]"></div>
-          <div className="backdrop-blur-md absolute size-[10rem] bottom-[0%] left-[80%]"></div>
-          <div className="backdrop-blur absolute size-[10rem] top-[70%] left-[20%]"></div>
-            <Image alt="" src={secTwoImg1} className="w-full"/>
+            <div className="backdrop-blur absolute size-[10rem] top-[50%]"></div>
+            <div className="backdrop-blur-md absolute size-[10rem] bottom-[0%] left-[80%]"></div>
+            <div className="backdrop-blur absolute size-[10rem] top-[70%] left-[20%]"></div>
+            <Image alt="" src={secTwoImg1} className="w-full" />
           </div>
           <div className="w-1/2 p-[6rem]">
             <h1 className="text-white font-extrabold text-4xl underline underline-offset-[1rem] mb-3 ">
@@ -84,7 +84,6 @@ export default function Home() {
           </div>
         </div>
         <div className="flex justify-between">
-        
           <div className="w-1/2 p-[6rem]">
             <h1 className="text-white font-extrabold text-4xl underline underline-offset-[1rem] mb-3">
               Why Income share agreement?
@@ -110,14 +109,14 @@ export default function Home() {
             />
           </div>
           <div className="image-holder w-1/2">
-            <Image alt="" src={secTwoImg1} className="w-full"/>
+            <Image alt="" src={secTwoImg1} className="w-full" />
           </div>
         </div>
       </section>
       <section className="section-two mt-[7rem]">
-              <h1 className="text-4xl  font-semibold text-center underline underline-offset-[1rem] ">University Partner</h1>
-              
-
+        <h1 className="text-4xl  font-semibold text-center underline underline-offset-[1rem] ">
+          University Partner
+        </h1>
       </section>
     </div>
   );
