@@ -49,8 +49,8 @@ const PartnerSection = (props: Props) => {
           <h1 className="text-4xl my-10 font-semibold text-center w-fit mx-auto ">
             Our Partners Institutions
             <div className="laptop:w-full w-2/3">
-              <div className="w-[5rem] h-1 bg-neutral-400" />
-              <Separator className="bg-neutral-400/50" />
+              <div className="w-[5rem] h-1 bg-zinc" />
+              <Separator className="bg-zinc" />
             </div>
           </h1>
           <p className="text-center text-xl p-8 md:w-[60%]  sm:w-full mx-auto">

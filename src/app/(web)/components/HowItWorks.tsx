@@ -5,6 +5,7 @@ import React from "react";
 import Button from "./Button";
 import { Check } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
+import secTwoImg2 from "@/assets/images/studentsEnvolved.png";
 
 type Props = {};
 
@@ -30,8 +31,8 @@ const HowItWorks = (props: Props) => {
             How does it work?
           </h1>
           <div className="w-full md:w-2/3">
-            <div className="w-[5rem] h-1 bg-neutral-400" />
-            <Separator className="bg-neutral-400/50" />
+            <div className="w-[5rem] h-1 bg-zinc" />
+            <Separator className="bg-zinc" />
           </div>
           <p className="text-white py-3 font-md text-base md:text-lg">
             Chancen provides access to quality education that equips you for the
@@ -57,8 +58,8 @@ const HowItWorks = (props: Props) => {
             Why Income share agreement?
           </h1>
           <div className="laptop:w-1/2 w-2/3">
-            <div className="w-[5rem] h-1 bg-neutral-400" />
-            <Separator className="bg-neutral-400/50" />
+            <div className="w-[5rem] h-1 bg-zinc" />
+            <Separator className="bg-zinc" />
           </div>
           <ul className="list-none py-2">
             {incomeShareAgreementStory.map((reason, index) => {
@@ -81,7 +82,7 @@ const HowItWorks = (props: Props) => {
           />
         </div>
         <div className="image-holder w-full md:w-1/2 relative">
-          <Image alt="" src={secTwoImg1} className="w-full" />
+          <Image alt="" src={secTwoImg2} className="w-full" />
         </div>
       </div>
     </section>

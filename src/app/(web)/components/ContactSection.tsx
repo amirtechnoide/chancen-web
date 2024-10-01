@@ -1,6 +1,7 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
+import { Mail, MapPinned, Phone } from "lucide-react";
 import { useState } from "react";
 
 const ContactSection = () => {
@@ -32,8 +33,8 @@ const ContactSection = () => {
       <h1 className="text-4xl  mb-10 font-semibold text-center w-fit mx-auto ">
         Contact Us
         <div className="laptop:w-full w-2/3">
-          <div className="w-[5rem] h-1 bg-neutral-400" />
-          <Separator className="bg-neutral-400/50" />
+          <div className="w-[5rem] h-1 bg-zinc" />
+          <Separator className="bg-zinc" />
         </div>
       </h1>
       <div className="container mx-auto mb-10 flex gap-8 flex-col md:flex-row justify-between items-center space-y-12 md:space-y-10">
@@ -46,17 +47,20 @@ const ContactSection = () => {
           </p>
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <span className="text-xl text-purple-500">&#128205;</span>
+              {/* <span className="text-xl text-purple-500">&#128205;</span> */}
+              <MapPinned />
               <p className="text-gray-600">
                 Sable, Akwa Nord, Douala, Cameroon, PoBox 4550
               </p>
             </div>
             <div className="flex items-center space-x-2">
-              <span className="text-xl text-orange-500">&#128222;</span>
+              {/* <span className="text-xl text-orange-500">&#128222;</span> */}
+              <Phone />
               <p className="text-gray-600">+(237) 692 078 136</p>
             </div>
             <div className="flex items-center space-x-2">
-              <span className="text-xl text-red-500">&#128231;</span>
+              {/* <span className="text-xl text-red-500">&#128231;</span> */}
+              <Mail />
               <p className="text-gray-600">info@seven-university.com</p>
             </div>
           </div>

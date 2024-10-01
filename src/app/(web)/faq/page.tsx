@@ -30,8 +30,8 @@ const FAQPage = () => {
               University
             </p>
             <div className="laptop:w-1/2 w-2/3">
-              <div className="w-[5rem] h-1 bg-neutral-400" />
-              <Separator className="bg-neutral-400/50" />
+              <div className="w-[5rem] h-1 bg-zinc" />
+              <Separator className="bg-zinc" />
             </div>
           </div>
         </div>

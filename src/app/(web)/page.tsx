@@ -70,8 +70,8 @@ export default function Home() {
         <h1 className="text-4xl font-semibold text-center mx-auto  w-fit">
           University Partner
           <div className="laptop:w-full w-2/3">
-            <div className="w-[5rem] h-1 bg-neutral-400" />
-            <Separator className="bg-neutral-400/50" />
+            <div className="w-[5rem] h-1 bg-zinc" />
+            <Separator className="bg-zinc" />
           </div>
         </h1>
         <PartnerSection />
