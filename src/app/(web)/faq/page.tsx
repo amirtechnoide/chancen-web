@@ -20,23 +20,23 @@ const FAQPage = () => {
         style={{
           backgroundImage: `url(${FAGHero.src})`,
         }}
-        className=" min-h-[70vh] bg-no-repeat bg-top bg-[length:100vw_auto] flex flex-col"
+        className=" min-h-[70vh] bg-no-repeat bg-top desktop:bg-[length:100vw_auto] bg-cover flex flex-col"
       >
-        <div className="flex-grow bg-slate-950/60 flex ">
+        <div className="flex-grow bg-slate-950/60 flex px-8">
           <div className="container mx-auto flex flex-grow flex-col text-neutral-400 justify-end my-28 gap-12">
             <h2 className="text-6xl font-semibold">FAQs</h2>
-            <p className="w-1/2 text-xl font-semibold">
+            <p className="laptop:w-1/2 w-2/3 text-xl font-semibold">
               Everything you need to know about Chancen and Seven international
               University
             </p>
-            <div className="w-1/2">
+            <div className="laptop:w-1/2 w-2/3">
               <div className="w-[5rem] h-1 bg-neutral-400" />
               <Separator className="bg-neutral-400/50" />
             </div>
           </div>
         </div>
       </section>
-      <section className="w-full h-auto grid grid-cols-2 gap-4 container mx-auto py-24">
+      <section className="w-full h-auto grid laptop:grid-cols-2 grid-cols-1 laptop:gap-4 gap-12 container mx-auto py-24 px-6">
         <div className="flex-3 ">
           <CustomCollapsible
             data={faqData}
@@ -45,12 +45,12 @@ const FAQPage = () => {
             title="Common Questions"
           />
         </div>
-        <div className="flex justify-end">
+        <div className="flex w-full lg-desktop:justify-end justify-center ">
           <Card
             style={{
               backgroundImage: `url(${cardImage.src})`,
             }}
-            className="text-background overflow-hidden bg-no-repeat bg-cover bg-top w-2/3 h-fit"
+            className="text-background overflow-hidden bg-no-repeat bg-cover bg-top laptop:w-2/3 w-full h-fit"
           >
             <div className="bg-slate-800/90 p-4">
               <CardHeader className="flex flex-col gap-4">
@@ -70,12 +70,14 @@ const FAQPage = () => {
                   return (
                     <div
                       key={i + "cardData"}
-                      className="flex items-center gap-6"
+                      className="grid desktop:grid-cols-[1fr,7fr] laptop:grid-cols-1 grid-cols-[1fr,7fr] items-center gap-2 lg-desktop:gap-2 desktop:gap-4 "
                     >
-                      <div className="w-8 h-8 flex items-center justify-center bg-neutral-600 rounded-full">
-                        <Icons className="h-5 w-5" />
+                      <div className="  self-center justify-self-center ">
+                        <div className="w-8 h-8 flex items-center justify-center  bg-neutral-600 rounded-full">
+                          <Icons className="h-5 w-5" />
+                        </div>
                       </div>
-                      <div className="flex flex-col gap-1">
+                      <div className="flex flex-col gap-1 w-full text-start desktop:text-start laptop:text-center ">
                         <h3 className="text-xl font-bold">{items?.title}</h3>
                         <p className="text-slate-300">{items?.desc}</p>
                       </div>

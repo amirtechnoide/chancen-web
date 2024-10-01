@@ -13,8 +13,11 @@ export const cardData = [
   {
     title: "Contact us",
     desc: (
-      <span>
-        Call us : (+237) 109-6666 ,<br /> Seveninternationaluniversity@gmail.com
+      <span className="w-full">
+        Call us : (+237) 109-6666 ,<br />
+        <span className="desktop:text-sm lg-desktop:text-base text-xs ">
+          Seveninternationaluniversity@gmail.com
+        </span>
       </span>
     ),
     icon: MessageCircle,
