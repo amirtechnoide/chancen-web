@@ -16,7 +16,7 @@ const GraySvg = ({ className }: { className: string }) => {
           cy="397.34"
           r="518.7"
           fill="white"
-          fill-opacity="0.14"
+          fillOpacity="0.14"
         />
       </svg>
     </div>

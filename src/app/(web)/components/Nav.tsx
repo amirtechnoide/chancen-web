@@ -1,4 +1,5 @@
 "use client";
+import { cn } from "@/lib/utils";
 import { chancenlogo } from "@/lib/web/images";
 import { headerLinks } from "@/lib/web/navLinks";
 import Image from "next/image";
@@ -35,14 +36,18 @@ const Nav = () => {
   };
 
   const usePathName = usePathname();
+  const isFAQPage = usePathName === "/faq";
+
   return (
     <>
       <header
-        className={`w-full mx-auto header left-0 top-0 z-40 flex items-center ${
-          sticky
-            ? "fixed z-[9999] bg-zinc !bg-opacity-80 shadow-sticky backdrop-blur-sm transition dark:bg-gray-dark dark:shadow-sticky-dark"
-            : " bg-transparent"
-        }`}
+        className={cn(
+          `w-full mx-auto header left-0 top-0 z-40 flex items-center`,
+          isFAQPage &&
+            "fixed z-[9999]  !bg-opacity-80 shadow-sticky backdrop-blur-sm transition dark:bg-gray-dark dark:shadow-sticky-dark",
+          sticky &&
+            "fixed z-[9999] bg-zinc !bg-opacity-80 shadow-sticky backdrop-blur-sm transition dark:bg-gray-dark dark:shadow-sticky-dark"
+        )}
       >
         <div className="w-[92%] mx-auto">
           <div className="relative flex items-center justify-end gap-4">
