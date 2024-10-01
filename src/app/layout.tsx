@@ -13,7 +13,6 @@ export const metadata: Metadata = {
   title: "Chancen Int'l Cameroon",
   description: "Get funding for your school ",
 };
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -23,6 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href={chancenlogo.src} />
+        <script defer>AOS.init();</script>
       </head>
       <body className={montserrat.className}>{children}</body>
     </html>

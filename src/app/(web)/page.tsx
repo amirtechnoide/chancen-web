@@ -8,13 +8,15 @@ import PartnerSection from "./components/PartnerSection";
 import ContactSection from "./components/ContactSection";
 import HowItWorks from "./components/HowItWorks";
 import { Separator } from "@/components/ui/separator";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 export default function Home() {
+  AOS.init();
   return (
     <div>
       <div className=" grid items-baseline min-h-screen p-8  gap-96 sm:p-20 font-[family-name:var(--font-geist-sans)]">
         <section className=" grid md:grid-cols-2 md:gap-96 h-auto">
-          <section className="left relative ">
+          <section className="left relative" data-aos="fade-right">
             <h1 className="text-3xl md:text-6xl font-bold md:leading-[70px]">
               <span className="text-primary">Study Now Pay Later. </span>
               Fair Finance For Equal Access
@@ -65,7 +67,11 @@ export default function Home() {
       </div>
       <HowItWorks />
       <section className="section-two mt-[7rem]">
-        <h1 className="text-4xl font-semibold text-center mx-auto  w-fit">
+        <h1
+          className="text-4xl font-semibold text-center mx-auto  w-fit"
+          data-aos="fade-down"
+          data-aos-duration="500"
+        >
           University Partner
           <div className="laptop:w-full w-2/3">
             <div className="w-[5rem] h-1 bg-zinc" />

@@ -10,7 +10,11 @@ const PartnerSection = () => {
       {/* Header Section */}
 
       <div className="container mx-auto p-6 py-8 flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
-        <div className="md:w-1/2 text-center md:text-left">
+        <div
+          className="md:w-1/2 text-center md:text-left"
+          data-aos="fade-right"
+          data-aos-duration="500"
+        >
           <h1 className="text-2xl font-bold text-green-700">
             Seven International University
           </h1>
@@ -30,7 +34,7 @@ const PartnerSection = () => {
           </p>
         </div>
 
-        <div className="md:w-1/2">
+        <div className="md:w-1/2" data-aos="fade-left" data-aos-duration="500">
           <Image
             src={siuLogo}
             alt="Seven International University"
@@ -44,7 +48,11 @@ const PartnerSection = () => {
       {/* Partners Section */}
       <div className="bg-white py-12 mt-24">
         <div>
-          <h1 className="text-4xl my-10 font-semibold text-center w-fit mx-auto ">
+          <h1
+            className="text-4xl my-10 font-semibold text-center w-fit mx-auto "
+            data-aos="fade-down"
+            data-aos-duration="500"
+          >
             Our Partners Institutions
             <div className="laptop:w-full w-2/3">
               <div className="w-[5rem] h-1 bg-zinc" />

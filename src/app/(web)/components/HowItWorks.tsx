@@ -24,7 +24,7 @@ const HowItWorks = () => {
           <div className="hidden sm:block backdrop-blur absolute w-[10rem] h-[10rem] top-[70%] left-[20%]"></div>
           <Image alt="" src={secTwoImg1} className="w-full" />
         </div>
-        <div className="w-full md:w-1/2 p-6 md:p-[6rem]">
+        <div className="w-full md:w-1/2 p-6 md:p-[6rem]" data-aos="fade-right">
           <h1 className="text-white font-extrabold text-2xl md:text-4xl mb-3">
             How does it work?
           </h1>
