@@ -18,28 +18,28 @@ const HowItWorks = (props: Props) => {
   ];
   return (
     <section className="section-one z-50 relative bg-zinc">
-      <div className="flex justify-between">
-        <div className="image-holder w-1/2 relative">
-          <div className="backdrop-blur absolute size-[10rem] top-[50%]"></div>
-          <div className="backdrop-blur-md absolute size-[10rem] bottom-[0%] left-[80%]"></div>
-          <div className="backdrop-blur absolute size-[10rem] top-[70%] left-[20%]"></div>
+      <div className="flex flex-col-reverse md:flex-row justify-between">
+        <div className="image-holder w-full md:w-1/2 relative">
+          <div className="backdrop-blur absolute w-[10rem] h-[10rem] sm:w-[10rem] sm:h-[12rem]  top-[50%]"></div>
+          <div className="hidden sm:block backdrop-blur-md absolute w-[10rem] h-[10rem] bottom-[0%] left-[80%]"></div>
+          <div className="hidden sm:block backdrop-blur absolute w-[10rem] h-[10rem] top-[70%] left-[20%]"></div>
           <Image alt="" src={secTwoImg1} className="w-full" />
         </div>
-        <div className="w-1/2 p-[6rem]">
-          <h1 className="text-white font-extrabold text-4xl mb-3 ">
+        <div className="w-full md:w-1/2 p-6 md:p-[6rem]">
+          <h1 className="text-white font-extrabold text-2xl md:text-4xl mb-3">
             How does it work?
           </h1>
-          <div className="laptop:w-1/2 w-2/3">
+          <div className="w-full md:w-2/3">
             <div className="w-[5rem] h-1 bg-neutral-400" />
             <Separator className="bg-neutral-400/50" />
           </div>
-          <p className="text-white py-3 font-md text-lg">
+          <p className="text-white py-3 font-md text-base md:text-lg">
             Chancen provides access to quality education that equips you for the
             modern workforce. With Income Share Agreement we invest in your
             future, and you pay us back with reinvestment when you’re
             financially able.
           </p>
-          <p className="text-white font-md text-lg">
+          <p className="text-white font-md text-base md:text-lg">
             Chancen provides access to quality education that equips you for the
             modern workforce. With Income Share Agreement we invest in your
             future, and you pay us back with reinvestment when you’re
@@ -51,8 +51,8 @@ const HowItWorks = (props: Props) => {
           />
         </div>
       </div>
-      <div className="flex justify-between">
-        <div className="w-1/2 p-[6rem]">
+      <div className="flex flex-col md:flex-row justify-between">
+        <div className="w-full md:w-1/2 p-6 md:p-[6rem]">
           <h1 className="text-white font-extrabold text-4xl mb-3">
             Why Income share agreement?
           </h1>
@@ -80,7 +80,7 @@ const HowItWorks = (props: Props) => {
             label="Read more"
           />
         </div>
-        <div className="image-holder w-1/2">
+        <div className="image-holder w-full md:w-1/2 relative">
           <Image alt="" src={secTwoImg1} className="w-full" />
         </div>
       </div>

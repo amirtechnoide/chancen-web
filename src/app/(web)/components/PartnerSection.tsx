@@ -8,10 +8,10 @@ type Props = {};
 
 const PartnerSection = (props: Props) => {
   return (
-    <div className="bg-white py-12 mt-24 md:p-12">
+    <div className="bg-white py-12 mt-24 md:p-6">
       {/* Header Section */}
 
-      <div className="container mx-auto py-8 flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
+      <div className="container mx-auto p-6 py-8 flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
         <div className="md:w-1/2 text-center md:text-left">
           <h1 className="text-2xl font-bold text-green-700">
             Seven International University
@@ -53,7 +53,7 @@ const PartnerSection = (props: Props) => {
               <Separator className="bg-neutral-400/50" />
             </div>
           </h1>
-          <p className="text-center text-xl p-8 w-[60%] mx-auto">
+          <p className="text-center text-xl p-8 md:w-[60%]  sm:w-full mx-auto">
             Chancen International is looking to partner with education
             institutions that strive for offering quality education that will
             lead to employment. Through the Future of Work Fund, we aim to
@@ -61,8 +61,8 @@ const PartnerSection = (props: Props) => {
             Africa for now.
           </p>
         </div>
-        <div className="overflow-hidden py-12">
-          <div className="flex justify-center items-center gap-10 flex-wrap space-x-8 animate-marquee">
+        <div className="overflow-hidden py-12 ">
+          <div className="flex justify-center flex-wrap items-center gap-2 space-x-8 animate-marquee animate-none">
             {[
               "1.png",
               "2.png",
@@ -101,7 +101,7 @@ const PartnerSection = (props: Props) => {
           }
         }
         .animate-marquee {
-          animation: marquee 50s linear infinite;
+          animation: marquee 20s linear infinite;
         }
       `}</style>
     </div>
