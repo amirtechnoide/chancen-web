@@ -1,5 +1,6 @@
 "use client";
 import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
 import { useState } from "react";
 
 const ContactSection = () => {
@@ -27,11 +28,15 @@ const ContactSection = () => {
   };
 
   return (
-    <div className="bg-gray-100 py-12 mt-24">
-      <h1 className="text-4xl  mb-10 font-semibold text-center underline underline-offset-[1rem] ">
+    <div className="bg-gray-100 py-12 mt-24 md:p-12">
+      <h1 className="text-4xl  mb-10 font-semibold text-center w-fit mx-auto ">
         Contact Us
+        <div className="laptop:w-full w-2/3">
+          <div className="w-[5rem] h-1 bg-neutral-400" />
+          <Separator className="bg-neutral-400/50" />
+        </div>
       </h1>
-      <div className="container mx-auto mb-10 flex flex-col md:flex-row justify-between items-center space-y-12 md:space-y-10">
+      <div className="container mx-auto mb-10 flex gap-8 flex-col md:flex-row justify-between items-center space-y-12 md:space-y-10">
         {/* Contact Info Section */}
         <div className="md:w-1/2 text-center md:text-left">
           <h2 className="text-2xl font-bold mb-4">Let's talk with us</h2>
@@ -62,6 +67,7 @@ const ContactSection = () => {
           <form onSubmit={handleSubmit}>
             <div className="flex space-x-4 mb-4">
               <input
+                required
                 type="text"
                 name="firstName"
                 placeholder="First Name"
@@ -70,6 +76,7 @@ const ContactSection = () => {
                 className="w-1/2 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
               />
               <input
+                required
                 type="text"
                 name="lastName"
                 placeholder="Last Name*"
@@ -80,6 +87,7 @@ const ContactSection = () => {
             </div>
             <div className="mb-4">
               <input
+                required
                 type="email"
                 name="email"
                 placeholder="Email*"
@@ -90,6 +98,7 @@ const ContactSection = () => {
             </div>
             <div className="mb-4">
               <input
+                required
                 type="text"
                 name="phoneNumber"
                 placeholder="Phone Number*"
@@ -100,6 +109,7 @@ const ContactSection = () => {
             </div>
             <div className="mb-6">
               <textarea
+                required
                 name="message"
                 placeholder="Your message..."
                 value={formData.message}

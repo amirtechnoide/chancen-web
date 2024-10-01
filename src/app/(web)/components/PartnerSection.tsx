@@ -2,12 +2,13 @@
 import Image from "next/image";
 import React from "react";
 import siuLogo from "@/assets/images/siu.png";
+import { Separator } from "@/components/ui/separator";
 
 type Props = {};
 
 const PartnerSection = (props: Props) => {
   return (
-    <div className="bg-white py-12 mt-24">
+    <div className="bg-white py-12 mt-24 md:p-12">
       {/* Header Section */}
 
       <div className="container mx-auto py-8 flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
@@ -45,8 +46,12 @@ const PartnerSection = (props: Props) => {
       {/* Partners Section */}
       <div className="bg-white py-12 mt-24">
         <div>
-          <h1 className="text-4xl my-10 font-semibold text-center underline underline-offset-[1rem] ">
+          <h1 className="text-4xl my-10 font-semibold text-center w-fit mx-auto ">
             Our Partners Institutions
+            <div className="laptop:w-full w-2/3">
+              <div className="w-[5rem] h-1 bg-neutral-400" />
+              <Separator className="bg-neutral-400/50" />
+            </div>
           </h1>
           <p className="text-center text-xl p-8 w-[60%] mx-auto">
             Chancen International is looking to partner with education
