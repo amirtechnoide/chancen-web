@@ -7,9 +7,7 @@ import { Check } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 import secTwoImg2 from "@/assets/images/studentsEnvolved.png";
 
-type Props = {};
-
-const HowItWorks = (props: Props) => {
+const HowItWorks = () => {
   const incomeShareAgreementStory = [
     "Study now and pay later",
     "You start paying when you earn a living wage",

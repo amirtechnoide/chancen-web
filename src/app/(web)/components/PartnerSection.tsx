@@ -4,9 +4,7 @@ import React from "react";
 import siuLogo from "@/assets/images/siu.png";
 import { Separator } from "@/components/ui/separator";
 
-type Props = {};
-
-const PartnerSection = (props: Props) => {
+const PartnerSection = () => {
   return (
     <div className="bg-white py-12 mt-24 md:p-6">
       {/* Header Section */}

@@ -1,11 +1,9 @@
 "use client";
 
-import { Check } from "lucide-react";
 import Image from "next/image";
-import { headerGraduation, secTwoImg1 } from "@/lib/web/images";
+import { headerGraduation } from "@/lib/web/images";
 import GraySvg from "./components/graySvg";
 import TaggedInfo from "./components/TaggedInfo";
-import Button from "./components/Button";
 import PartnerSection from "./components/PartnerSection";
 import ContactSection from "./components/ContactSection";
 import HowItWorks from "./components/HowItWorks";
