@@ -4,6 +4,8 @@ import { headerGraduation, secTwoImg1 } from "@/lib/web/images";
 import GraySvg from "./components/graySvg";
 import TaggedInfo from "./components/TaggedInfo";
 import Button from "./components/Button";
+import PartnerSection from "./components/PartnerSection";
+import ContactSection from "./components/ContactSection";
 const incomeShareAgreementStory = [
   "Study now and pay later",
   "You start paying when you earn a living wage",
@@ -129,7 +131,9 @@ export default function Home() {
         <h1 className="text-4xl  font-semibold text-center underline underline-offset-[1rem] ">
           University Partner
         </h1>
-        <div></div>
+        <PartnerSection />
+
+        <ContactSection />
       </section>
     </div>
   );
