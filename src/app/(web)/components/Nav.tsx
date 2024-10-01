@@ -4,7 +4,7 @@ import Image from "next/image";
 import React from "react";
 const Nav = () => {
   return (
-    <div className="w-[92%] mx-auto">
+    <div className="w-[92%] mx-auto  p-8 bg-transparent backdrop-blur-sm ">
       <section className="flex items-center justify-between relative z-50">
         <div>
           <Image alt="" src={chancenlogo} width={200} height={200} />
@@ -12,10 +12,7 @@ const Nav = () => {
         <ul className="flex items-center gap-4">
           {headerLinks.map((linkObj) => {
             return (
-              <li
-                key={linkObj.name}
-                className="hover:text-primary text-white"
-              >
+              <li key={linkObj.name} className="hover:text-primary text-white">
                 <a href={linkObj.route}>{linkObj.name}</a>
               </li>
             );

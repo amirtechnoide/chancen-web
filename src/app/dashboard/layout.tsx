@@ -1,8 +1,6 @@
 import React from "react";
 
-type Props = {};
-
-function layout({}: Props) {
+function layout() {
   return <div>layout</div>;
 }
 

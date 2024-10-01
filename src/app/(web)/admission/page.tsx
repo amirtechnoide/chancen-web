@@ -1,11 +1,9 @@
 "use client";
 import React from "react";
-import StepperForm from "./components/stepper";
+// import StepperForm from "./components/stepper";
 
-type Props = {};
-
-const page = (props: Props) => {
-  return <StepperForm />;
+const page = () => {
+  return <div>Stepper</div>;
 };
 
 export default page;

@@ -1,11 +1,9 @@
-import { Check, LocateIcon, MapPin, UserPlus } from "lucide-react";
-import Nav from "./reuseables/Nav";
+import { Check } from "lucide-react";
 import Image from "next/image";
 import { headerGraduation, secTwoImg1 } from "@/lib/web/images";
-import HeadSvg from "./reuseables/headSvg";
-import GraySvg from "./reuseables/graySvg";
-import TaggedInfo from "./reuseables/TaggedInfo";
-import Button from "./reuseables/Button";
+import GraySvg from "./components/graySvg";
+import TaggedInfo from "./components/TaggedInfo";
+import Button from "./components/Button";
 const incomeShareAgreementStory = [
   "Study now and pay later",
   "You start paying when you earn a living wage",
@@ -16,36 +14,50 @@ const incomeShareAgreementStory = [
 export default function Home() {
   return (
     <div>
-      <div className="grid grid-rows-[20px_1fr_20px]  items-center  min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-        <section className="flex  justify-between h-auto">
-          <section className="left relative top-[15rem]">
-            <h1 className="max-w-[40%] text-5xl font-bold leading-[70px]">
-              <span className="text-primary ">Study Now Pay Later. </span>
+      <div className=" grid items-baseline min-h-screen p-8  gap-96 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+        <section className=" grid grid-cols-2 gap-96 h-auto">
+          <section className="left relative ">
+            <h1 className=" text-6xl font-bold leading-[70px]">
+              <span className="text-primary">Study Now Pay Later. </span>
               Fair Finance For Equal Access
             </h1>
-            <p className="max-w-[35%] pt-7 leading-6">
+            <p className=" pt-7 leading-6 text-xl">
               Chancen provides access to quality education that equips you for
               the modern workforce. With Income Share Agreement we invest in
               your future, and you pay us back with reinvestment when you’re
-              financially able.
+              financially able. Chancen is already present in Cameroon, helping
+              students achieve their educational goals. Our mission is to make
+              education accessible to everyone, regardless of their financial
+              background. We believe that education is a right, not a privilege,
+              and we are committed to breaking down the barriers that prevent
+              talented individuals from reaching their full potential.
+            </p>
+            <p className="pt-4 leading-6 text-xl">
+              Join us and be part of a community that values education and equal
+              opportunities.
+              {/* Together, we can create a future where everyone has
+              the chance to succeed. By partnering with us, you are not only
+              investing in your own future but also contributing to the
+              development of the next generation of leaders and innovators. */}
             </p>
           </section>
           <section className="right ">
-            <HeadSvg className="absolute top-0 left-[50%]" />
-            <GraySvg className="absolute bottom-2 left-[60%]" />
-            <div className="image-holder max-w-[560px] max-h-[900px] ">
+            {/* <HeadSvg className="absolute top-0 -z-10 left-[50%]" /> */}
+            <GraySvg className="absolute top-0 -z-10 right-[0%]" />
+            {/* <GraySvg className="absolute bottom-[0px] -z-10 left-[50%]" /> */}
+            <div className="image-holder">
               <TaggedInfo
-                className="absolute bg-primary z-10 top-[40%] right-[30%]  rounded-lg"
+                className="absolute bg-primary z-10 top-[30%] right-[30%]  rounded-lg"
                 label="Participants"
                 number="18"
               />
               <Image
                 alt=""
                 src={headerGraduation}
-                className="absolute bottom-[5%] right-[3%] max-w-[560px] max-h-[900px]"
+                className="absolute bottom-[12%] right-[3%] "
               />
               <TaggedInfo
-                className="absolute bg-primary z-10 top-[70%] right-[3%]  rounded-lg"
+                className="absolute bg-primary z-10 top-[60%] right-[3%]  rounded-lg"
                 label="Universities"
                 number="72"
               />
@@ -117,6 +129,7 @@ export default function Home() {
         <h1 className="text-4xl  font-semibold text-center underline underline-offset-[1rem] ">
           University Partner
         </h1>
+        <div></div>
       </section>
     </div>
   );
