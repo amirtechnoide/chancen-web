@@ -86,7 +86,7 @@ const PartnerSection = (props: Props) => {
 
       {/* Contact Us Section */}
 
-      {/* <style jsx>{`
+      <style jsx>{`
         @keyframes marquee {
           0% {
             transform: translateX(-100%);
@@ -98,7 +98,7 @@ const PartnerSection = (props: Props) => {
         .animate-marquee {
           animation: marquee 50s linear infinite;
         }
-      `}</style> */}
+      `}</style>
     </div>
   );
 };
